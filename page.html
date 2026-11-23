@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Monday 23 November 2026: COP31 collapses with no deal, Trump threatens to sink Iranian vessels, AI rout shakes markets — 50 stories, a UTC timeline and a date check</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1024px; height:1024px; }
+  body { background:#f7f2e7; color:#1a1a1a; font-family: Arial, Helvetica, sans-serif; overflow:hidden; }
+  .page { width:1024px; height:1024px; display:flex; flex-direction:column; background:#f7f2e7; }
+
+  /* ---------- MASTHEAD (light) ---------- */
+  .masthead { height:96px; padding:8px 20px 6px; border-top:6px solid #b91c1c; border-bottom:3px solid #1a1a1a; text-align:center; flex:0 0 auto; }
+  .masthead h1 { font-family: Georgia, 'Times New Roman', serif; font-size:46px; line-height:1; letter-spacing:2px; color:#111; }
+  .masthead .date { font-size:13px; letter-spacing:4px; font-weight:bold; color:#b91c1c; margin-top:3px; }
+  .masthead .tag { font-size:10px; letter-spacing:2px; color:#555; margin-top:2px; }
+
+  /* ---------- BIG 3 ---------- */
+  .big3 { height:192px; display:flex; flex:0 0 auto; border-bottom:2px solid #1a1a1a; }
+  .big { flex:1; padding:7px 12px 6px; border-right:1px solid #c9bfa5; overflow:hidden; }
+  .big:last-child { border-right:none; }
+  .big-kicker { font-size:10px; font-weight:bold; letter-spacing:1.5px; color:#b91c1c; }
+  .big-art { width:100%; height:64px; display:block; margin:2px 0 3px; }
+  .big h2 { font-family: Georgia, serif; font-size:20px; line-height:1.05; }
+  .big p { font-size:10.5px; line-height:1.3; margin-top:3px; color:#333; }
+  .big-src { font-size:8px; font-weight:bold; letter-spacing:0.5px; color:#666; margin-top:4px; }
+
+  /* ---------- NUMBERS STRIP ---------- */
+  .numbers { height:48px; display:flex; align-items:center; background:#b91c1c; color:#fff; flex:0 0 auto; }
+  .numbers .nlabel { font-size:10px; font-weight:bold; letter-spacing:1.5px; padding:0 12px; border-right:1px solid rgba(255,255,255,.4); white-space:nowrap; }
+  .num { flex:1; text-align:center; }
+  .num b { font-size:21px; display:block; line-height:1; }
+  .num span { font-size:8px; letter-spacing:0.5px; text-transform:uppercase; }
+
+  /* ---------- MEDIUM 12 ---------- */
+  .medium { height:292px; display:grid; grid-template-columns:repeat(4, 1fr); grid-template-rows:repeat(3, 1fr); flex:0 0 auto; border-bottom:2px solid #1a1a1a; }
+  .med { padding:6px 9px 5px; border-right:1px solid #d8cfb8; border-bottom:1px solid #d8cfb8; overflow:hidden; }
+  .med:nth-child(4n) { border-right:none; }
+  .med:nth-child(n+9) { border-bottom:none; }
+  .med-num { font-size:23px; font-weight:bold; color:#b91c1c; line-height:1; font-family: Georgia, serif; }
+  .med-title { font-size:11.5px; font-weight:bold; line-height:1.15; margin-top:2px; }
+  .med-text { font-size:8.5px; line-height:1.25; color:#444; margin-top:2px; }
+  .med-src { font-size:7.5px; font-weight:bold; letter-spacing:0.5px; color:#777; margin-top:3px; }
+
+  /* ---------- MAP + LIST ---------- */
+  .maplist { flex:1 1 auto; display:flex; min-height:0; border-bottom:2px solid #1a1a1a; }
+  .mapbox { width:300px; flex:0 0 300px; padding:6px 8px; border-right:1px solid #c9bfa5; }
+  .mapbox h3 { font-size:11px; letter-spacing:1.5px; }
+  .mapbox svg { width:284px; height:180px; display:block; }
+  .mapbox .mapnote { font-size:8px; color:#666; margin-top:2px; }
+  .listbox { flex:1; padding:6px 10px; display:flex; gap:14px; overflow:hidden; }
+  .listcol { flex:1; }
+  .listcol h4 { font-size:9px; letter-spacing:1px; color:#b91c1c; border-bottom:1px solid #c9bfa5; padding-bottom:1px; margin:3px 0 2px; }
+  .listcol h4:first-child { margin-top:0; }
+  .listcol p { font-size:9px; line-height:1.28; color:#333; }
+  .listcol p b { color:#111; }
+
+  /* ---------- TIMELINE ---------- */
+  .timeline { height:48px; display:flex; align-items:stretch; flex:0 0 auto; border-bottom:2px solid #1a1a1a; }
+  .timeline .tlabel { width:92px; flex:0 0 92px; background:#1a1a1a; color:#fff; font-size:10px; font-weight:bold; letter-spacing:1px; display:flex; align-items:center; justify-content:center; text-align:center; }
+  .tslot { flex:1; padding:5px 7px; border-right:1px solid #d8cfb8; overflow:hidden; }
+  .tslot:last-child { border-right:none; }
+  .tslot b { font-size:11px; color:#b91c1c; display:block; }
+  .tslot span { font-size:8.5px; line-height:1.2; color:#333; }
+
+  /* ---------- DATE CHECK ---------- */
+  .datecheck { height:96px; flex:0 0 auto; border:3px solid #b91c1c; background:#fdf6e3; margin:5px 8px 0; padding:5px 10px 4px; overflow:hidden; }
+  .datecheck h3 { font-size:12px; letter-spacing:1px; color:#b91c1c; }
+  .datecheck h3 span { color:#1a1a1a; font-size:9px; letter-spacing:0; font-weight:normal; }
+  .dc-grid { display:grid; grid-template-columns:repeat(3, 1fr); margin-top:3px; }
+  .dc-grid p { font-size:8.5px; line-height:1.3; color:#333; }
+  .dc-grid p b { color:#111; }
+  .dc-ny { font-size:8.5px; margin-top:3px; color:#333; border-top:1px dashed #c9a25e; padding-top:2px; }
+  .dc-ny b { color:#b91c1c; }
+
+  /* ---------- BOTTOM ---------- */
+  .bottom { height:46px; flex:0 0 auto; display:flex; gap:12px; padding:6px 12px; align-items:flex-start; }
+  .bottom .cell { font-size:8.5px; line-height:1.3; color:#444; }
+  .bottom .cell b { color:#111; font-size:9px; letter-spacing:0.5px; }
+  .bottom .sure { flex:0 0 330px; }
+  .bottom .howto { flex:0 0 250px; }
+  .bottom .foot { flex:1; text-align:right; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- MASTHEAD -->
+  <header class="masthead">
+    <h1>THE MONDAY GLOBE</h1>
+    <div class="date">MONDAY 23 NOVEMBER 2026</div>
+    <div class="tag">50 STORIES &middot; 7 REGIONS &middot; 11 FIELDS &middot; ALL FROM THIS MONDAY</div>
+  </header>
+
+  <!-- BIG 3 -->
+  <section class="big3">
+    <article class="big">
+      <div class="big-kicker">1 &middot; CLIMATE</div>
+      <svg class="big-art" viewBox="0 0 300 64">
+        <circle cx="52" cy="32" r="26" fill="#cfe3ee" stroke="#1a1a1a" stroke-width="2"/>
+        <path d="M30,26 Q45,20 52,30 Q60,38 74,30" fill="none" stroke="#5a7d8c" stroke-width="2"/>
+        <path d="M52,8 L46,20 L56,24 L48,34 L58,40" fill="none" stroke="#b91c1c" stroke-width="2.5"/>
+        <rect x="100" y="38" width="16" height="18" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+        <rect x="122" y="38" width="16" height="18" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+        <rect x="144" y="38" width="16" height="18" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+        <text x="100" y="24" font-family="Arial" font-size="15" font-weight="bold" fill="#b91c1c">NO DEAL</text>
+        <text x="298" y="58" font-family="Arial" font-size="9" fill="#666" text-anchor="end">ANTALYA &middot; EMPTY CHAIRS</text>
+      </svg>
+      <h2>COP31 COLLAPSES</h2>
+      <p>UN climate talks in Antalya end with no deal. The EU rejects a draft with no fossil-fuel language &mdash; the third collapse in 30 years, and the longest COP ever.</p>
+      <div class="big-src">CONFIRMED &middot; REUTERS, BBC</div>
+    </article>
+    <article class="big">
+      <div class="big-kicker">2 &middot; CONFLICT</div>
+      <svg class="big-art" viewBox="0 0 300 64">
+        <path d="M20,44 L120,44 L112,56 L28,56 Z" fill="#1a1a1a"/>
+        <rect x="34" y="30" width="18" height="14" fill="#b91c1c"/>
+        <rect x="56" y="30" width="18" height="14" fill="#555"/>
+        <rect x="78" y="30" width="18" height="14" fill="#b91c1c"/>
+        <rect x="98" y="34" width="10" height="10" fill="#1a1a1a"/>
+        <path d="M150,20 Q190,34 230,30 Q260,28 285,40" fill="none" stroke="#2f6fb2" stroke-width="3"/>
+        <path d="M278,32 L286,40 L276,42 Z" fill="#2f6fb2"/>
+        <text x="150" y="58" font-family="Arial" font-size="10" fill="#666">STRAIT OF HORMUZ</text>
+        <text x="20" y="16" font-family="Arial" font-size="10" font-weight="bold" fill="#1a1a1a">OIL TANKER STRUCK</text>
+      </svg>
+      <h2>TRUMP THREATENS TO SINK IRANIAN VESSELS</h2>
+      <p>After a US strike on an oil tanker, Trump warns Iranian vessels will be sunk. Houthis claim strikes on a Saudi oil refinery and radar; 6 injured.</p>
+      <div class="big-src">REPORTED &middot; AP, INDIAN EXPRESS</div>
+    </article>
+    <article class="big">
+      <div class="big-kicker">3 &middot; MARKETS</div>
+      <svg class="big-art" viewBox="0 0 300 64">
+        <line x1="18" y1="8" x2="18" y2="56" stroke="#1a1a1a" stroke-width="1.5"/>
+        <line x1="18" y1="56" x2="290" y2="56" stroke="#1a1a1a" stroke-width="1.5"/>
+        <polyline points="24,18 80,26 130,48 180,52 230,30 284,20" fill="none" stroke="#b91c1c" stroke-width="3"/>
+        <text x="120" y="20" font-family="Arial" font-size="13" font-weight="bold" fill="#b91c1c">&minus;5% KOSPI</text>
+        <text x="215" y="16" font-family="Arial" font-size="13" font-weight="bold" fill="#1e7d32">+3% REBOUND</text>
+      </svg>
+      <h2>AI ROUT SHAKES MARKETS</h2>
+      <p>KOSPI falls 5%, Taiwan stocks swing 1,578 points intraday, Nasdaq 100 futures rebound 3%. South Korea exports top $1 trillion for the first time.</p>
+      <div class="big-src">CONFIRMED &middot; REUTERS</div>
+    </article>
+  </section>
+
+  <!-- NUMBERS STRIP -->
+  <section class="numbers">
+    <div class="nlabel">THE DAY<br>IN NUMBERS</div>
+    <div class="num"><b>&minus;5%</b><span>KOSPI</span></div>
+    <div class="num"><b>1,578</b><span>Taiwan pts swing</span></div>
+    <div class="num"><b>$1T</b><span>Korea exports</span></div>
+    <div class="num"><b>$450M</b><span>Skubal deal</span></div>
+    <div class="num"><b>6.5</b><span>Vanuatu quake</span></div>
+    <div class="num"><b>24</b><span>Nigeria boat dead</span></div>
+  </section>
+
+  <!-- MEDIUM 12 -->
+  <section class="medium">
+    <div class="med"><div class="med-num">160+</div><div class="med-title">4 &middot; Riemann proof claimed</div><div class="med-text">Anthropic mathematician Levent Alp&ouml;ge and Claude claim a proof of the Riemann Hypothesis, unresolved for 160+ years.</div><div class="med-src">REPORTED</div></div>
+    <div class="med"><div class="med-num">1</div><div class="med-title">5 &middot; Russian frigate sinks</div><div class="med-text">Frigate Merkury sinks in Benghazi, Libya, in a suspected Ukrainian naval drone attack.</div><div class="med-src">REPORTED &middot; THE HINDU</div></div>
+    <div class="med"><div class="med-num">1992</div><div class="med-title">6 &middot; Democrats&rsquo; biggest House win since 1992</div><div class="med-text">Democrats flip a North Carolina seat to win their largest House majority since 1992.</div><div class="med-src">CONFIRMED &middot; BBC</div></div>
+    <div class="med"><div class="med-num">1</div><div class="med-title">7 &middot; Gaza Board of Peace ultimatum</div><div class="med-text">The Board of Peace threatens to return its mandate to the UN over Israeli delays on a forces pact and police training.</div><div class="med-src">REPORTED</div></div>
+    <div class="med"><div class="med-num">6.5</div><div class="med-title">8 &middot; M 6.5 quake, Vanuatu region</div><div class="med-text">A magnitude 6.5 earthquake strikes the Vanuatu region at 598 km depth. PAGER green.</div><div class="med-src">CONFIRMED &middot; USGS</div></div>
+    <div class="med"><div class="med-num">$450M</div><div class="med-title">9 &middot; Mets sign Tarik Skubal</div><div class="med-text">The Mets sign pitcher Tarik Skubal to a record 9-year, $450M contract.</div><div class="med-src">REPORTED</div></div>
+    <div class="med"><div class="med-num">10</div><div class="med-title">10 &middot; Liverpool hammer ten-man United</div><div class="med-text">Liverpool rout ten-man Manchester United; Pochettino&rsquo;s debut ends in defeat after a Yoro red card.</div><div class="med-src">CONFIRMED</div></div>
+    <div class="med"><div class="med-num">$5M</div><div class="med-title">11 &middot; Mexico captures Chapo Isidro</div><div class="med-text">Mexico captures FBI-wanted cartel leader Chapo Isidro, carrying a $5M bounty, after a Sinaloa firefight.</div><div class="med-src">REPORTED</div></div>
+    <div class="med"><div class="med-num">2</div><div class="med-title">12 &middot; Nepal PM begins India visit</div><div class="med-text">Nepal PM Balen Shah begins his India visit, with energy and connectivity on the agenda.</div><div class="med-src">REPORTED &middot; THE HINDU</div></div>
+    <div class="med"><div class="med-num">7</div><div class="med-title">13 &middot; Boy, 7, pulled alive from rubble</div><div class="med-text">A 7-year-old boy is pulled alive from rubble hours after a Russian strike on Ukraine.</div><div class="med-src">CONFIRMED &middot; BBC</div></div>
+    <div class="med"><div class="med-num">2</div><div class="med-title">14 &middot; ICE detains father and daughter</div><div class="med-text">ICE detains a father and daughter at Seattle airport as they travel to a family baptism, their lawyer says.</div><div class="med-src">REPORTED &middot; THE HINDU</div></div>
+    <div class="med"><div class="med-num">1</div><div class="med-title">15 &middot; Manchester arena evacuated</div><div class="med-text">Manchester&rsquo;s Co-op Live arena is evacuated after a suspected tear gas release at a concert.</div><div class="med-src">REPORTED &middot; BBC</div></div>
+  </section>
+
+  <!-- MAP + LIST 16-50 -->
+  <section class="maplist">
+    <div class="mapbox">
+      <h3>WHERE IT HAPPENED &middot; STORIES 1&ndash;15</h3>
+      <svg viewBox="0 0 300 190">
+        <rect x="0" y="0" width="300" height="190" fill="#eef3f6"/>
+        <path d="M8,28 L70,18 L88,30 L82,52 L60,66 L40,78 L22,70 L10,48 Z" fill="#e8dcc3" stroke="#b8a888" stroke-width="1"/>
+        <path d="M58,86 L86,84 L92,108 L78,140 L64,128 L56,102 Z" fill="#e8dcc3" stroke="#b8a888" stroke-width="1"/>
+        <path d="M138,30 L168,22 L176,38 L164,52 L146,50 L136,40 Z" fill="#e8dcc3" stroke="#b8a888" stroke-width="1"/>
+        <path d="M140,58 L172,56 L180,76 L172,108 L158,126 L146,104 L138,78 Z" fill="#e8dcc3" stroke="#b8a888" stroke-width="1"/>
+        <path d="M178,26 L262,20 L278,44 L268,70 L240,84 L210,78 L188,60 L176,42 Z" fill="#e8dcc3" stroke="#b8a888" stroke-width="1"/>
+        <path d="M238,128 L272,126 L276,142 L246,146 L236,138 Z" fill="#e8dcc3" stroke="#b8a888" stroke-width="1"/>
+        <g font-family="Arial" font-size="9" font-weight="bold" text-anchor="middle">
+          <circle cx="164" cy="50" r="8" fill="#b91c1c"/><text x="164" y="53" fill="#fff">1</text>
+          <circle cx="204" cy="64" r="8" fill="#b91c1c"/><text x="204" y="67" fill="#fff">2</text>
+          <circle cx="256" cy="50" r="8" fill="#b91c1c"/><text x="256" y="53" fill="#fff">3</text>
+          <circle cx="48" cy="42" r="8" fill="#b91c1c"/><text x="48" y="45" fill="#fff">4</text>
+          <circle cx="158" cy="70" r="8" fill="#b91c1c"/><text x="158" y="73" fill="#fff">5</text>
+          <circle cx="58" cy="58" r="8" fill="#b91c1c"/><text x="58" y="61" fill="#fff">6</text>
+          <circle cx="186" cy="62" r="8" fill="#b91c1c"/><text x="186" y="65" fill="#fff">7</text>
+          <circle cx="282" cy="120" r="8" fill="#b91c1c"/><text x="282" y="123" fill="#fff">8</text>
+          <circle cx="66" cy="44" r="8" fill="#b91c1c"/><text x="66" y="47" fill="#fff">9</text>
+          <circle cx="152" cy="38" r="8" fill="#b91c1c"/><text x="152" y="41" fill="#fff">10</text>
+          <circle cx="34" cy="62" r="8" fill="#b91c1c"/><text x="34" y="65" fill="#fff">11</text>
+          <circle cx="226" cy="62" r="8" fill="#b91c1c"/><text x="226" y="65" fill="#fff">12</text>
+          <circle cx="174" cy="36" r="8" fill="#b91c1c"/><text x="174" y="39" fill="#fff">13</text>
+          <circle cx="28" cy="38" r="8" fill="#b91c1c"/><text x="28" y="41" fill="#fff">14</text>
+          <circle cx="140" cy="28" r="8" fill="#b91c1c"/><text x="140" y="31" fill="#fff">15</text>
+        </g>
+      </svg>
+      <div class="mapnote">Dots mark the place of each top-15 story. Field census: Conflict 8 &middot; Markets 6 &middot; Politics 6 &middot; Diplomacy 6 &middot; Sport 6 &middot; Society 5 &middot; Tech 4 &middot; Justice 3 &middot; Weather 3 &middot; Crime 2 &middot; Climate 1 = 50.</div>
+    </div>
+    <div class="listbox">
+      <div class="listcol">
+        <h4>NORTH AMERICA (6)</h4>
+        <p><b>16.</b> Red Wings trade captain Dylan Larkin to Montreal Canadiens.</p>
+        <p><b>17.</b> Anthropic shares retreat after record IPO.</p>
+        <p><b>18.</b> US hawks urge Trump to strike Iran again; Trump says no rush.</p>
+        <p><b>21.</b> Compass plans to move stock listing to New York.</p>
+        <p><b>39.</b> OpenAI scientist urges common AI limits, warns of risks by 2027.</p>
+        <p><b>46.</b> US immigration crackdown: 1,389 Indian children in custody since 2023.</p>
+        <h4>EUROPE (12)</h4>
+        <p><b>19.</b> France&rsquo;s leading candidates both question Ukraine aid.</p>
+        <p><b>20.</b> UK disability benefits review to target health-related claims.</p>
+        <p><b>22.</b> Tyson Fury documentary &mdash; wife reveals schizophrenia diagnosis.</p>
+        <p><b>23.</b> Paolo Bulgari dies aged 89.</p>
+        <p><b>24.</b> FIDE World Championship Game 1 &mdash; Sindarov gets White.</p>
+        <p><b>25.</b> Russian strike on Zelenskyy&rsquo;s hometown kills 2, wounds 60.</p>
+        <p><b>26.</b> Poland reports airspace breach &mdash; 3 Russian missiles crossed Friday.</p>
+        <p><b>40.</b> NHS launches world&rsquo;s largest AI breast-cancer trial.</p>
+        <p><b>41.</b> FIFA to confirm UK as host for 2035 Women&rsquo;s World Cup.</p>
+        <p><b>47.</b> Dutch FM: India can help end Ukraine war by engaging Russia.</p>
+        <p><b>48.</b> Britain, France and China block Nusseibeh bid for UN top job.</p>
+        <p><b>49.</b> Slovakia rejects contributing to new &euro;45bn EU loan for Ukraine.</p>
+      </div>
+      <div class="listcol">
+        <h4>MIDDLE EAST (4)</h4>
+        <p><b>27.</b> Hamas seeks emergency talks after strike kills 3 aid workers.</p>
+        <p><b>28.</b> Israeli airstrike in northern Gaza, one critically injured.</p>
+        <p><b>29.</b> Syria arrests second officer over 2014 Otaiba ambush.</p>
+        <p><b>30.</b> Iraq disrupts major oil smuggling operation.</p>
+        <h4>SOUTH ASIA (6)</h4>
+        <p><b>31.</b> India and China hold 10-day talks to ease LAC tensions.</p>
+        <p><b>32.</b> India vs New Zealand Test Day 5 &mdash; NZ 157/4 at lunch.</p>
+        <p><b>43.</b> Youth Congress protests Meta over blocked opposition accounts.</p>
+        <p><b>44.</b> Congress MLA writes letter in blood to Haryana CM.</p>
+        <p><b>45.</b> FSSAI orders prosecution of Bisleri over unsafe water.</p>
+        <p><b>50.</b> West Bengal BJP calls protest over attacks on Hindus in Bangladesh.</p>
+        <h4>EAST ASIA (4)</h4>
+        <p><b>33.</b> Taiwan FSC bans short selling at or below flat price.</p>
+        <p><b>34.</b> Taiwan October export orders extend 21-month rise.</p>
+        <p><b>35.</b> South Korea finance minister pledges market stabilization.</p>
+        <p><b>38.</b> Suspected Chinese hackers use AI framework Cairn on East Asian universities.</p>
+        <h4>SOUTHEAST ASIA (2)</h4>
+        <p><b>36.</b> Indonesia factory fire &mdash; 24 body bags found.</p>
+        <p><b>37.</b> Selangor flood evacuees rise past 1,800.</p>
+        <h4>AFRICA (1)</h4>
+        <p><b>42.</b> Nigeria boat capsizes en route to funeral, 24 dead.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="timeline">
+    <div class="tlabel">UTC<br>TIMELINE</div>
+    <div class="tslot"><b>01:23 UTC</b><span>Democrats flip North Carolina seat</span></div>
+    <div class="tslot"><b>02:24 UTC</b><span>UK front pages lead with COP31 collapse</span></div>
+    <div class="tslot"><b>02:37 UTC</b><span>Boy, 7, pulled alive from rubble</span></div>
+    <div class="tslot"><b>02:40 UTC</b><span>M 6.5 quake, Vanuatu region</span></div>
+    <div class="tslot"><b>03:59 UTC</b><span>Nepal PM Shah begins India visit</span></div>
+    <div class="tslot"><b>05:00 UTC</b><span>Hamas seeks emergency talks</span></div>
+  </section>
+
+  <!-- DATE CHECK -->
+  <section class="datecheck">
+    <h3>DATE CHECK &mdash; LEFT OUT AS OLDER NEWS <span>&middot; these stories broke on earlier days, not Monday 23 November 2026</span></h3>
+    <div class="dc-grid">
+      <p><b>COP30 deal agreed, no fossil-fuel roadmap</b> &mdash; Sat 21 Nov</p>
+      <p><b>Verstappen wins Las Vegas GP</b> &mdash; Sat 21 Nov</p>
+      <p><b>Banda Sea quake 6.8</b> &mdash; Sat 21 Nov</p>
+      <p><b>Shenzhen Trump&ndash;Putin&ndash;Xi summit</b> &mdash; Sun 22 Nov</p>
+      <p><b>Two tankers struck, Strait of Hormuz</b> &mdash; Sat 22 Nov</p>
+      <p><b>Gaza aid-vehicle strike kills 3</b> &mdash; Sat 21 Nov</p>
+      <p><b>Gaza floods displace 1M+</b> &mdash; Sun 22 Nov</p>
+      <p><b>Nvidia board probes Huang</b> &mdash; Sun 22 Nov</p>
+      <p><b>Eisenkot tapped to govern Gaza</b> &mdash; Sun 22 Nov</p>
+      <p><b>PL results: Newcastle 2-2 Arsenal, Leeds 4-1 Chelsea</b> &mdash; Sat 21 Nov</p>
+      <p><b>US-Iran $48.3bn campaign</b> &mdash; Fri 21 Nov</p>
+      <p><b>900,000 AI chips / Nvidia subpoena</b> &mdash; Thu 19 Nov</p>
+    </div>
+    <div class="dc-ny"><b>NOT YET:</b> India v New Zealand Test Day 5 result &mdash; in progress &middot; FIFA to confirm UK as 2035 Women&rsquo;s World Cup host &mdash; announcement to come &middot; Nepal PM Shah India visit outcome &mdash; visit just begun &middot; FIDE World Championship Game 1 &mdash; in progress</div>
+  </section>
+
+  <!-- BOTTOM -->
+  <footer class="bottom">
+    <div class="cell sure"><b>HOW SURE</b> &mdash; CONFIRMED: reported by multiple outlets. REPORTED: one credible outlet. CLAIM: a party&rsquo;s own claim, not yet verified.</div>
+    <div class="cell howto"><b>HOW TO READ</b> &mdash; Read top to bottom: the 3 biggest stories, then 12 more, then all 50 by region. Red numbers are the day&rsquo;s biggest figures.</div>
+    <div class="cell foot">Every story above was first reported on <b>Monday 23 November 2026</b>. Claims are attributed. Sources: Reuters, BBC, AP, The Hindu, Indian Express, USGS.</div>
+  </footer>
+
+</div>
+<script>window.addEventListener('load', function(){ window.__shotReady = true; });</script>
+</body>
+</html>
